@@ -1,0 +1,181 @@
+
+/*
+Copyright (c) 2015 by Stéphane Lyver 
+
+Permission is hereby granted, free of charge, to any person 
+obtaining a copy of this software and associated documentation files
+(the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify,
+  merge, publish, distribute, sublicense, and/or sell copies of 
+  the Software, and to permit persons to whom the Software is 
+  furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
+body {
+  background: #ebeff2;
+  font-family: "Exo 2";
+}
+.zone {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-radial-gradient(center ellipse, #eb6a5a 0, #c9402f 100%);
+  background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+  width: 60%;
+  height: 50%;
+  border: 5px dashed white;
+  text-align: center;
+  color: white;
+  z-index: 20;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+
+.zone .btnCompression .active {
+  background: #EB6A5A;
+  color: white;
+}
+.zone i {
+  text-align: center;
+  font-size: 10em;
+  color: #fff;
+  margin-top: 50px;
+}
+.zone .selectFile {
+  height: 50px;
+  margin: 20px auto;
+  position: relative;
+  width: 200px;
+}
+.zone label,
+.zone input {
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+.zone label {
+  background: #fff;
+  color: #EB6A5A;
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-shadow: 0 1px 1px gray;
+}
+.zone input[type=file] {
+  opacity: 0;
+}
+.zone.in {
+  color: white;
+  border-color: white;
+  background: -webkit-radial-gradient(center ellipse, #eb6a5a 0, #c9402f 100%);
+  background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+}
+.zone.in i {
+  color: #fff;
+}
+.zone.in label {
+  background: #fff;
+  color: #EB6A5A;
+}
+.zone.hover {
+  color: gray;
+  border-color: white;
+  background: #fff;
+  border: 5px dashed gray;
+}
+.zone.hover i {
+  color: #EB6A5A;
+}
+.zone.hover label {
+  background: #fff;
+  color: #EB6A5A;
+}
+.zone.fade {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+.list {
+  position: absolute;
+ margin: auto;
+  background: -webkit-radial-gradient(center ellipse, #eb6a5a 0, #c9402f 100%);
+  background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+  width: 40%;
+  top:80%;
+  left: 30%;
+  height: auto;
+  border: 5px dashed white;
+  text-align: center;
+  color: white;
+  z-index: 20;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.line {
+
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+
+}
+
+.element {
+
+  list-style: none;
+
+}
+
+.foot {
+
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background: white ;
+   text-align: center;
+font-family: 'Orbitron', sans-serif;
+   font-size: 18px;
+   font-weight: bold;}
+a:link {
+    color: red;
+   text-decoration: none;
+
+}
+a:visited {
+    color: red;
+    text-decoration: none;
+
+}
+a:hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
